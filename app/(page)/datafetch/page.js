@@ -4,7 +4,7 @@ import Products from "@/servies/product";
 export default async function datafetch() {
 
     const product = await Products();
-    console.log(product);
+    // console.log(product);
 
     return (
         <main className="container-fluid">
