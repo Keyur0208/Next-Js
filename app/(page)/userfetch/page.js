@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export async function user_list() {
-    let user_data = await fetch("http://localhost:3000/api/users");
+    // let user_data = await fetch("http://localhost:3000/api/users");
     user_data = await user_data.json();
     return user_data;
 }
