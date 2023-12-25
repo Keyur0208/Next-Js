@@ -20,7 +20,7 @@ export default async function user() {
 
                     return (
                         <>
-                            <Link href={`user/${item.id}`} style={{fontSize:'2rem'}} > {item.first_name}</Link><br></br>
+                            <Link href={`userfetch/${item.id}`} style={{fontSize:'2rem'}} > {item.first_name}</Link><br></br>
                         </>
                     )
                 })
@@ -28,3 +28,4 @@ export default async function user() {
         </>
     )
 }
+
