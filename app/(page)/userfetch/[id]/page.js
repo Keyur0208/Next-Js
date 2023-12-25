@@ -1,7 +1,7 @@
 import React from 'react'
 
 export async function user_list(id) {
-  let user_data = await fetch(`http://localhost:3000/api/users/${id}`);
+  // let user_data = await fetch(`http://localhost:3000/api/users/${id}`);
   user_data = await user_data.json();
   return user_data;
 }
