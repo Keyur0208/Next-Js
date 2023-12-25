@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export async function user_list() {
-    // let user_data = await fetch("http://localhost:3000/api/users");
-    user_data = await user_data.json();
-    return user_data;
-}
+// export async function user_list() {
+//      let user_data = await fetch("http://localhost:3000/api/users");
+//     user_data = await user_data.json();
+//     return user_data;
+// }
 
 
 export default async function user() {
@@ -20,7 +20,7 @@ export default async function user() {
 
                     return (
                         <>
-                            <Link href={`userfetch/${item.id}`} style={{fontSize:'2rem'}} > {item.first_name}</Link><br></br>
+                            {/* <Link href={`userfetch/${item.id}`} style={{fontSize:'2rem'}} > {item.first_name}</Link><br></br> */}
                         </>
                     )
                 })
