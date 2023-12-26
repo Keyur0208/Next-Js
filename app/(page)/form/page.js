@@ -48,8 +48,10 @@
 
 import React from 'react'
 
-export const page = () => {
+const page = () => {
   return (
-    <div>page</div>
+    <div>Form Page</div>
   )
 }
+
+export default page
