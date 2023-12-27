@@ -1,5 +1,4 @@
 export const user = [
-
     {
         id:1,
         first_name:'keyur',
@@ -20,6 +19,13 @@ export const user = [
         last_name:'dobariya',
         age:20,
         city:'surat'
+    },
+    {
+        id:4,
+        first_name:"kenvi",
+        last_name:"sabhaya",
+        age:20,
+        city:"surat"
     }
 ]
 
