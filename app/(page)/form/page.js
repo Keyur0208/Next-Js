@@ -3,7 +3,7 @@
 
 // export default function form() {
 
-//     const [fisrt_name, setfirst_name] = useState("");
+//     const [first_name, setfirst_name] = useState("");
 //     const [last_name, setlast_name] = useState("");
 //     const [age, setage] = useState("");
 //     const [mail, setmail] = useState("");
@@ -12,7 +12,7 @@
 
 //         let data = await fetch ("http://localhost:3000/api/users",{
 //             method:"POST",
-//             body:JSON.stringify({fisrt_name,last_name,age,mail})
+//             body:JSON.stringify({first_name,last_name,age,mail})
 //         });
 //         data = await data.json();
 //         console.log(data);
@@ -32,7 +32,7 @@
 //             <br></br>
 //             <h1 className="text-center" >Students Forms</h1>
 //             <br></br>
-//             <input type="text" placeholder="First Name" className="form-control" value={fisrt_name} onChange={(e) => setfirst_name(e.target.value)} required />
+//             <input type="text" placeholder="First Name" className="form-control" value={first_name} onChange={(e) => setfirst_name(e.target.value)} required />
 //             <br></br>
 //             <input type="text" placeholder="Last Name" className="form-control" value={last_name} onChange={(e) => setlast_name(e.target.value)}  required/>
 //             <br></br>
@@ -46,11 +46,12 @@
 //     )
 // }
 
+
 import React from 'react'
 
 const page = () => {
   return (
-    <div>Form Page</div>
+    <div>page</div>
   )
 }
 

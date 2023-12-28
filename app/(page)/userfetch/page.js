@@ -1,7 +1,8 @@
 // import Link from "next/link";
+// import Delete from '../../delete_data'
 
 // export async function user_list() {
-//      let user_data = await fetch("http://localhost:3000/api/users");
+//     let user_data = await fetch("http://localhost:3000/api/users");
 //     user_data = await user_data.json();
 //     return user_data;
 // }
@@ -14,20 +15,38 @@
 
 //     return (
 //         <>
-//             <h1>User List</h1>
-//             {
-//                 users.map((item) => {
+//             <h1 className="text-center">User List</h1>
+//             <br></br>
+//             <table className="table text-center  table-dark">
+//                 <thead>
+//                     <tr>
+//                         <th scope="col">USER DATA</th>
+//                         <th scope="col">UPDATE</th>
+//                         <th scope="col">DELETE</th>
+//                     </tr>
+//                 </thead>
+//                 {
+//                     users.map((item) => {
 
-//                     return (
-//                         <>
-//                           <Link href={`userfetch/${item.id}`} style={{fontSize:'2rem'}} > {item.first_name}</Link><br></br>
-//                         </>
-//                     )
-//                 })
-//             }
+//                         return (
+//                             <>
+//                                 <tbody>
+//                                     <tr>
+//                                         <td><Link href={`userfetch/${item.id}`} className="btn btn-primary" > {item.first_name}</Link> </td>
+//                                         <td><Link href={`userfetch/${item.id}/update`} className="btn btn-success" > Edit</Link></td>
+//                                         <td><Delete id={item.id} /></td>
+//                                     </tr>
+//                                 </tbody>
+//                             </>
+//                         )
+//                     })
+//                 }
+//             </table>
 //         </>
 //     )
 // }
+
+
 
 import React from 'react'
 
@@ -38,5 +57,4 @@ const page = () => {
 }
 
 export default page
-
 
