@@ -5,9 +5,10 @@ import { NextResponse } from "next/server";
 
 export async function GET()
 {
-    mongoose.connect(connectionSrt)
-    const data = await Product.find();
-    console.log(data);
+    // mongoose.connect(connectionSrt)
+    // const data = await Product.find();
+    // console.log(data);
 
-    return NextResponse.json({result:data})
+    return NextResponse.json({result:"Hello"})
 }
+
